@@ -64,7 +64,17 @@ if (true ){
 	fmt.Println("positive")
 }
 
-
+switch 5 {
+case 0:
+	fmt.Println("zero")
+case 1,2,3,4:
+	fmt.Println("one to four")
+case 5:
+	fmt.Println("five")		
+default:
+	fmt.Println("default")
+	
+}
 
 
 }
