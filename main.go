@@ -53,6 +53,18 @@ lua.name="cow"
 lua.speices="meat"
 
 fmt.Printf("lua: %v\n", lua)
+
+//Tagging a field to add extar information
+type Goon struct{
+	name string `required max:"100"`
+	speices string
+}
+
+
+
+
+
+
 }
 
 
