@@ -6,40 +6,16 @@ import (
 )
 
 func main() {
-	var conferenceName = "Golang confernece"
-	const conferenceTickets = 50
-	// var bookings []string
 
-	// var firstName, lastName string
+sample_array := [30]string{"dog","cat"}
+fmt.Printf("sample_array: %v\n", sample_array)
 
-	// for {
+sample_slice := append(sample_array[:])
+fmt.Printf("sample_slice: %v\n", sample_slice)
 
-	// 	fmt.Println("welcome")
-	// 	fmt.Println("please enter your first name")
-	// 	fmt.Scan(&firstName)
-	// 	fmt.Println("please enter your last name")
-	// 	fmt.Scan(&lastName)
+var sample_map = map [string] int { "hey":78, "hello":56,}
+fmt.Printf("codes: %v\n", sample_map)
 
-	// 	bookings = append(bookings, firstName+" "+lastName)
-        
-	// 	for index,booking := range bookings{
-    //        var names = strings.Fields(booking)
-	// 	    initial := names[0][0]
-	
-	// 	   fmt.Printf("names: %v\n", names)
-	// 	   fmt.Printf("index: %v\n", index)
-	// 	   fmt.Printf("initial: %v\n", initial)
-	// 	}
 
-	// 	fmt.Printf("%v  welcome to %v ", bookings[len(bookings) - 1], conferenceName)
-    //     fmt.Printf("bookings: %v\n", bookings)
 
-	// }
-//  initials := conferenceName[0]
-   fmt.Printf("conferenceName: %c\n", conferenceName[0])
-
-for index , ticket := range conferenceName {
-	fmt.Printf("%c",conferenceName[index])
-	fmt.Printf("ticket: %c\n", ticket)
-}
 }
