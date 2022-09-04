@@ -5,7 +5,7 @@ import "fmt"
 func main(){
 	var conferenceName = "Golang confernece"
 	const conferenceTickets  = 50
-	var bookings [50]string
+	var bookings []string
 
 	var firstName , lastName string
     
@@ -14,9 +14,10 @@ func main(){
 	fmt.Scan(&firstName)
 	fmt.Println("please enter your last name")
 	fmt.Scan(&lastName)
-    bookings[0] = firstName + " " + lastName
 
-	fmt.Printf("%v %v welcome to %v ",firstName,lastName,conferenceName)
+    bookings = append(bookings,firstName + " " + lastName) 
+
+	fmt.Printf("%v  welcome to %v ",bookings[0],conferenceName)
 
  
 
