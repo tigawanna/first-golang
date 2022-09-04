@@ -28,4 +28,33 @@ type Doctor struct{
 sampleStruct := Doctor{actorName:"guy",age:57}
 fmt.Printf("sampleStruct: %v\n", sampleStruct)
 
+
+
+type Animal struct{
+	name string
+	speices string
 }
+
+//embedding animal struct into Mammal
+type Mammal struct{
+	Animal
+	breed string
+	legs int
+}
+
+var lua = Mammal{
+legs:4,	
+breed:"fresian",
+// name:"cow",
+// speices:"meat",
+}
+//assigning Anmal Struct values to Mammal using embedded fields
+lua.name="cow"
+lua.speices="meat"
+
+fmt.Printf("lua: %v\n", lua)
+}
+
+
+
+
