@@ -60,7 +60,9 @@ type Goon struct{
 	speices string
 }
 
-
+if (true ){
+	fmt.Println("positive")
+}
 
 
 
