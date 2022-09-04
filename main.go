@@ -18,9 +18,9 @@ func main(){
 
 	fmt.Printf("%v %v welcome to %v ",firstName,lastName,conferenceName)
 
-	fmt.Println("bookings")
-    fmt.Print(bookings)
+ 
 
-
+    fmt.Printf("conferenceName: %v\n", conferenceName)
+	fmt.Printf("bookings: %v\n", bookings)
 
 }
