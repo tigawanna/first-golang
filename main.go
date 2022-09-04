@@ -35,10 +35,11 @@ func main() {
     //     fmt.Printf("bookings: %v\n", bookings)
 
 	// }
- initials := conferenceName[0]
+//  initials := conferenceName[0]
    fmt.Printf("conferenceName: %c\n", conferenceName[0])
 
-   if (initials  == 'G'){
-     println("G matches",initials)
-   }
+for index , ticket := range conferenceName {
+	fmt.Printf("%c",conferenceName[index])
+	fmt.Printf("ticket: %c\n", ticket)
+}
 }
